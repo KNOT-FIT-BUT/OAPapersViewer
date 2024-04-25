@@ -1,0 +1,4 @@
+textual~=0.1.18
+textual-inputs~=0.2.6
+oapapersloader~=1.0.1
+rich~=12.6.0

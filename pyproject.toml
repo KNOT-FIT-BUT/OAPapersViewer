@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oapapersviewer"
+dynamic = ["dependencies"]
+version = "1.0.0"
+requires-python = ">=3.10"
+authors = [
+  {name = "Martin Dočekal"},
+]
+description = "TUI viewer for OAPapers corpus and derived datasets."
+readme = "README.md"
+keywords = ["OAPapers", "TUI", "viewer", "OARelatedWork"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Repository = "https://github.com/KNOT-FIT-BUT/OAPapersViewer"
+
+[project.scripts]
+oapapersviewer = "oapapersviewer.__main__:main"
